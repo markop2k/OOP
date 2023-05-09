@@ -1,5 +1,6 @@
 from korisnik import ispis_korisnika
 from artikl import ispis_artikla
+from korisnik import ispis_korisnika
 
 
 def ispis_prodaje(prodaja):

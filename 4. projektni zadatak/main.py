@@ -26,12 +26,7 @@ while running:
     elif akcija == 2:
         kategorije.append(unos_kategorije(len(kategorije) + 1))
     elif akcija == 3:
-        try:
-            if len(korisnici) != 0 | len(kategorije) != 0:
-                raise Exception(f"Morate prvo unjenti korisnika i katregoriju")
-        except Exception as e:
-            print(e)
-        prodaje.append(unos_prodaje(korisnici, kategorije, len(prodaje) + 1))
+       prodaje.append(unos_prodaje(korisnici, kategorije, len(prodaje) + 1))4
     elif akcija == 4:
         ispis_svih_korisnika(korisnici)
     elif akcija == 5:

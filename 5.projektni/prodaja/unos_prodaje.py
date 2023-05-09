@@ -1,4 +1,4 @@
-from artikl import get_artilk
+from artikl import get_artikl
 from kategorija import get_kategorija
 from korisnik import get_korisnik
 from utilities import unos_datuma, unos_intervala
@@ -25,7 +25,7 @@ def unos_prodaje(korisnici, kategorije, redni_broj):
     print(f"Odaberite artikl {redni_broj}. prodaje: ")
 
     for i, artikl in enumerate(kategorije[odabrana_kategorija - 1].artikl, start=1):
-        print(get_artilk(i, artikl))
+        print(get_artikl(i, artikl))
 
     odabrani_artikl = unos_intervala(1,i)
 
